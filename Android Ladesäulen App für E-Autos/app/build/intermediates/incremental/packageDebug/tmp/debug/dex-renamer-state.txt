@@ -1,0 +1,4 @@
+#Sun Feb 06 23:56:26 CET 2022
+base.0=C\:\\Users\\Can\\Desktop\\MapWithMarker13\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
