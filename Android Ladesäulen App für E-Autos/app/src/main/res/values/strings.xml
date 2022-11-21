@@ -1,0 +1,58 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Map With Marker</string>
+    <string name="title_activity_maps">Map with Marker</string>
+    <string name="route">Route</string>
+    <string name="noch_kein_verlauf_vorhanden">Noch kein Verlauf vorhanden</string>
+    <string name="favoriten">Favoriten</string>
+    <string name="einstellungen">Einstellungen</string>
+    <string name="todo">TODO</string>
+    <string name="suchesymbol">SucheSymbol</string>
+    <string name="suchleiste">SuchLeiste</string>
+    <string name="suche">Suche</string>
+    <string name="buttonzueinstellungen">ButtonZuEinstellungen</string>
+    <string name="buttonzufavoriten">ButtonZuFavoriten</string>
+    <string name="EasyCharge" />
+    <string name="buttonzueinstellungenlandscape">buttonzueinstellungen</string>
+    <string name="umkreis_0_km">Umkreis: </string>
+    <string name="bernehmen">Übernehmen</string>
+    <string name="role_role">Rolle: Role</string>
+    <string name="username_name">Benutzername: Name</string>
+    <string name="logout">Abmelden</string>
+    <string name="login">Anmelden</string>
+    <string name="registrieren">Registrieren</string>
+    <string name="username">Benutzername</string>
+    <string name="password">Kennwort</string>
+    <string name="password_again">Kennwort bestätigen</string>
+    <string name="loginQuest">Noch kein Konto?</string>
+    <string name="RolleWaehlen">Rolle auswählen</string>
+    <string name="Defekt">Defekt melden</string>
+    <string name="Melden">melden</string>
+    <string name="Reparieren">reparieren</string>
+    <string name="in_der_n_he">In der Nähe</string>
+    <string name="breitengrad">Breitengrad</string>
+    <string name="laengengrad">Laengengrad</string>
+    <string name="easycharge">EasyCharge</string>
+
+
+    <string-array name="rollen">
+        <item>User</item>
+        <item>Servicetechniker</item>
+    </string-array>
+
+</resources>

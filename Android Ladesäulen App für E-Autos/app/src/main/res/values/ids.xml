@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textview2" type="id" />
+    <item name="textviewR2" type="id" />
+    <item name="textviewR3" type="id" />
+    <item name="textviewR4" type="id" />
+    <item name="textviewR5" type="id" />
+    <item name="textviewR3F" type="id" />
+    <item name="textviewR2F" type="id" />
+    <item name="textviewR4F" type="id" />
+    <item name="textviewR5F" type="id" />
+</resources>
