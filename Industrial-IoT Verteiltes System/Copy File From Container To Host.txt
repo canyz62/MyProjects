@@ -1,0 +1,8 @@
+docker ps -a
+
+Docker Container ID:83c853882aba
+Container WorkDir /app/out.txt
+Host Copy Path C:/users/can
+
+Copy File from Docker Container to Host System
+docker cp 83c853882aba:/app/out.txt C:/users/can
