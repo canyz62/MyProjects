@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mapwithmarker"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:8:22-76
+15
+16    <!-- Include required permissions for Google Maps API to run. -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:23:5-79
+17-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:23:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:28:9-32
+22
+23    <queries>
+23-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:30:5-34:15
+24
+25        <!-- Needs to be explicitly declared on Android R+ -->
+26        <package android:name="com.google.android.apps.maps" />
+26-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:33:9-64
+26-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:33:18-61
+27    </queries>
+28
+29    <application
+29-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:10:5-54:19
+30        android:allowBackup="true"
+30-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:11:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.7.0] C:\Users\Can\.gradle\caches\transforms-3\962de192d006ed4ee64f44d54d96ab17\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:12:9-43
+34        android:label="@string/app_name"
+34-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:13:9-41
+35        android:supportsRtl="true"
+35-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:14:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme" >
+37-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:15:9-40
+38        <activity
+38-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:16:9-18:40
+39            android:name="com.example.mapwithmarker.OnRecyclerClickUser"
+39-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:17:13-48
+40            android:exported="false" />
+40-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:18:13-37
+41        <activity
+41-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:19:9-21:40
+42            android:name="com.example.mapwithmarker.OnRecyclerClickServiceworker"
+42-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:20:13-57
+43            android:exported="false" />
+43-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:21:13-37
+44        <activity
+44-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:22:9-24:40
+45            android:name="com.example.mapwithmarker.Register"
+45-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:23:13-37
+46            android:exported="false" />
+46-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:24:13-37
+47        <activity
+47-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:25:9-33:20
+48            android:name="com.example.mapwithmarker.Login"
+48-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:26:13-34
+49            android:exported="true" >
+49-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:27:13-36
+50            <intent-filter>
+50-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:28:13-32:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:29:17-69
+51-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:29:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:31:17-77
+53-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:31:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:34:9-36:40
+57            android:name="com.example.mapwithmarker.Settings"
+57-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:35:13-37
+58            android:exported="false" />
+58-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:36:13-37
+59        <activity
+59-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:37:9-39:40
+60            android:name="com.example.mapwithmarker.Search"
+60-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:38:13-35
+61            android:exported="false" />
+61-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:39:13-37
+62        <activity
+62-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:40:9-42:40
+63            android:name="com.example.mapwithmarker.Favoriten"
+63-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:41:13-38
+64            android:exported="false" />
+64-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:42:13-37
+65
+66        <meta-data
+66-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:44:9-46:69
+67            android:name="com.google.android.gms.version"
+67-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:45:13-58
+68            android:value="@integer/google_play_services_version" /> <!-- The API key for Google Maps-based APIs. -->
+68-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:46:13-66
+69        <meta-data
+70            android:name="com.google.android.geo.API_KEY"
+70-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:48:13-58
+71            android:value="AIzaSyACSNfUt2BGbS2vpApePERlnWfHMX6tj6k" />
+71-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:49:13-44
+72
+73        <activity
+73-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:51:9-53:40
+74            android:name="com.example.mapwithmarker.MapsMarkerActivity"
+74-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:52:13-47
+75            android:exported="false" />
+75-->C:\Users\Can\Desktop\MapWithMarker13\app\src\main\AndroidManifest.xml:53:13-37
+76        <!-- Needs to be explicitly declared on P+ -->
+77        <uses-library
+77-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:39:9-41:40
+78            android:name="org.apache.http.legacy"
+78-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:40:13-50
+79            android:required="false" />
+79-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\Can\.gradle\caches\transforms-3\6adbb3d8330eeeda0ec1950dc1632032\transformed\play-services-maps-18.0.0\AndroidManifest.xml:41:13-37
+80
+81        <activity
+81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Can\.gradle\caches\transforms-3\6d38be554d18e81a1e7139094fd57f85\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+82            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Can\.gradle\caches\transforms-3\6d38be554d18e81a1e7139094fd57f85\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+83            android:exported="false"
+83-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Can\.gradle\caches\transforms-3\6d38be554d18e81a1e7139094fd57f85\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Can\.gradle\caches\transforms-3\6d38be554d18e81a1e7139094fd57f85\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+85
+86        <provider
+86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+88            android:authorities="com.example.mapwithmarker.androidx-startup"
+88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+89            android:exported="false" >
+89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+90            <meta-data
+90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+92                android:value="androidx.startup" />
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Can\.gradle\caches\transforms-3\004645f5352e6209f94d70c12271db9f\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+93            <meta-data
+93-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Can\.gradle\caches\transforms-3\302ccddfe1a1fa914b5e897542835264\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+94-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Can\.gradle\caches\transforms-3\302ccddfe1a1fa914b5e897542835264\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+95                android:value="androidx.startup" />
+95-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Can\.gradle\caches\transforms-3\302ccddfe1a1fa914b5e897542835264\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+96        </provider>
+97    </application>
+98
+99</manifest>
