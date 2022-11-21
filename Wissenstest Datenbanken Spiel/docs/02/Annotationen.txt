@@ -1,0 +1,32 @@
+Annotationen der Entity-Klassen:
+
+Answer
+-> @Embeddable
+-> @Table(name = "Answer", schema = "db2p")
+
+Question
+-> @Entity
+-> @Table(name = "Question", schema = "db2p")
+
+-> @Id
+private int id;
+
+-> @ElementCollection
+private List<Answer> fourAnswers;
+
+-> @ManyToOne
+private Category ctgry;
+
+Category
+-> @Entity
+-> @Table(name = "Category", schema = "db2p")
+
+-> @Column(unique = true)
+private String name;
+
+-> @Id	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "db2p")
+private int categoryID;
+
+-> @OneToMany(mappedBy = "ctgry", cascade = {CascadeType.PERSIST})
+private List<Question> questionList;
+

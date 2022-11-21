@@ -1,0 +1,35 @@
+Klasse Game:
+
+@Entity
+@Table(name = "Game", schema = "db2p")
+
+@Id
+   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "db2p")
+   int id;
+
+@Column(name = "startTime")
+@Temporal(TemporalType.TIMESTAMP)
+   private Date start;
+
+@Column(name = "endTime")
+@Temporal(TemporalType.TIMESTAMP)
+   private Date end;
+
+@ManyToOne (cascade = {CascadeType.PERSIST})
+   Player player;
+
+@ElementCollection
+@CollectionTable(name = "AskedQuestion", schema = "db2p")
+   private Map<Question, Boolean> askedQuestion = new HashMap<>();
+
+
+Klasse Player:
+
+@Entity
+@Table(name = "Player", schema = "db2p")
+
+@Id
+  String name;
+
+@OneToMany(mappedBy = "player")
+  List<Game> games;

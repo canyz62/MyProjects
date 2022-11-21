@@ -1,0 +1,119 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    // Apply the application plugin to add support for building an application
+    id 'application'
+
+    id 'com.github.spotbugs' version '4.7.9'
+
+    id 'checkstyle'
+
+    // Used by 'downloadTests' task below
+    id 'de.undercouch.download' version '4.1.2'
+}
+
+application {
+    // Define the main class for the application
+    mainClass.set('de.hda.fbi.db2.Main')
+}
+
+spotbugs {
+    ignoreFailures = false
+    // Only cause failure for high priority issues
+    // Note: Currently this excludes all lower priority issues from report, see
+    // https://github.com/spotbugs/spotbugs-gradle-plugin/issues/14
+    reportLevel = 'high'
+    showStackTraces = false
+}
+tasks.withType(com.github.spotbugs.snom.SpotBugsTask) {
+    reports {
+        xml.required = false
+        html.required = true
+    }
+}
+
+checkstyle {
+    toolVersion '8.29'
+    //configFile file('config/checkstyle/wso2_checks.xml')
+    //configFile file('config/checkstyle/sun_checks.xml')
+    configFile file('config/checkstyle/google_checks.xml')
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.required = false
+        html.required = true
+    }
+}
+
+tasks.register('downloadTestClasses') {
+    description('Replaces the local test classes with the test classes from the remote base '
+            + 'project. WARNING: This overwrites local changes!')
+
+    doLast {
+        def unzipDir = new File('src/test/java/de/hda/fbi/db2/test')
+        def gitURL = 'https://code.fbi.h-da.de/db2-praktikum/base-project/-/archive/master/base-project-master.zip?path=src%2Ftest%2Fjava%2Fde%2Fhda%2Ffbi%2Fdb2%2Ftest'
+
+        download {
+            src gitURL
+            dest 'tests.zip'
+        }
+
+        copy {
+            from zipTree('tests.zip').getFiles()
+            into unzipDir
+        }
+
+        delete 'tests.zip'
+    }
+}
+
+// Specify Java version used to build this project
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+dependencies {
+    // Use eclipselink JPA Implementation
+    implementation 'org.eclipse.persistence:eclipselink:2.7.9'
+
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation 'org.postgresql:postgresql:42.3.1'
+
+    def spotBugsAnnotationsVersion = '4.5.0'
+    // SpotBugs annotations to suppress warnings about false positives
+    compileOnly "com.github.spotbugs:spotbugs-annotations:$spotBugsAnnotationsVersion"
+    testCompileOnly "com.github.spotbugs:spotbugs-annotations:$spotBugsAnnotationsVersion"
+
+    // Use JUnit test framework
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+test {
+    // Use JUnit 5 for tests
+    useJUnitPlatform()
+
+    // Pass system property to test JVM, see https://stackoverflow.com/a/21406600
+    systemProperty 'ci-server', System.getProperty('ci-server')
+
+    // Log information while running tests
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+
+        showExceptions true
+        exceptionFormat 'full'
+    }
+}
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+}
+
+// Attach stdin to gradle run
+run {
+    standardInput = System.in
+}

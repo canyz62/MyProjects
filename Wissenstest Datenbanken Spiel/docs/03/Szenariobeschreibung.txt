@@ -1,0 +1,23 @@
+Szenario Wissenstest spielen
+
+Akteur: Spieler
+
+Auslöser: Spieler startet Wissensspiel und gibt seinen Namen ein
+
+Ablauf:
+
+1. Spieler wird erzeugt und erhält eine ID (eindeutiger Name). Bereits existierenden Spieler wieder verwenden.
+Timestamp Start.
+2. Spieler wählt mind. 2 Kategorien.
+3. Spieler bestimmt wie viele Fragen er pro Kategorie beantworten möchte. Besitzt eine Kategorie
+weniger Fragen als die gewünschte Anzahl, so werden alle Fragen dieser Kategorie ausgewählt.
+4. 1. Frage der Kategorie wird ausgegeben mit den 4 möglichen Antworten.
+5. Der Spieler wählt eine Antwort durch die Eingabe [1,2,3,4].
+6. Es Erscheint eine Ausgabe, ob der Spieler die richtige Antwort ausgewählt hat, ist dies nicht
+der Fall wird dem Spieler mitgeteilt, dass seine Auswahl falsch war.
+7. Für die weiteren Fragen wird nach 4.-6. verfahren
+//8. Eingabe eines 'x' sorgt für Beendigung des Spiels
+9. Ende des Spiels.
+10. Nach 8. oder 9. wird das Spiel mit den gewählten Antworten vom Spieler gespeichert.
+Mit gewählte ID des Spiels, gewählte Kategorien, Name des Spielers, Timestamp (Start & Ende)
+und Antworten.
