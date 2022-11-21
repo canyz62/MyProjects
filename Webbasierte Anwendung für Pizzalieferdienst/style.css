@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+@import url('https://fonts.googleapis.com/css?family=Denk+One');
+@import url('https://fonts.googleapis.com/css?family=Wendy+One');
+
+
+
+/* Baecker
+ */
+.Bäcker{
+    text-align: center;
+}
+
+
+
+/* Fahrer
+ */
+.Fahrer{
+    text-align: center;
+}
+
+
+/* Kunde
+ */
+
+#bestellungAufgeben{
+margin-top: 5em;
+}
+.Kunde{
+    text-align: center;
+}
+
+.kundenBestellungen{
+    text-align: center;
+    margin-top: 5em;
+}
+
+
+
+
+/* Bestellen
+ */
+
+
+.top-nav{
+    display: none;
+}
+
+
+.PizzaName, .PizzaPreis, .Speisekarte{
+    text-align: center;
+}
+
+.PizzaPreis{
+    font-family: Aclonica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    text-shadow: saddlebrown 0.1em 0.1em 0.1em;
+}
+.PizzaArtikel{
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    display: inline-block;
+    border-radius: 3em;
+    background-color: #f46b45;
+box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
+
+.PizzaName{
+    font-family: "Denk One", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: saddlebrown 0.1em 0.1em 0.1em;
+}
+
+.PizzaBild:hover{
+    animation: float 2s ease-in-out infinite;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+.Warenkorb {
+    text-align: center;
+}
+
+select#warenkorbListBox{
+    border: 1px solid transparent; /* haesslich, geht aber leider nicht anders */
+    background: transparent;
+}
+
+#warenkorbListBox{
+    overflow: auto
+}
+#warenkorbListBox option
+{
+    font-family: "Wendy One", sans-serif;
+    margin-top: 0.3em;
+    border-radius: 1em;
+    color: white;
+    padding: 0.6em;
+    font-size: 1.2em;
+    background-color: #f46b45;
+    text-align: center;
+}
+
+#warenkorbListBox option:checked
+{
+    background-color: lightcoral ;
+}
+
+
+/* general
+ */
+h2, h1{
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+}
+
+fieldset > legend{
+    font-size: 1.5em;
+}
+fieldset{
+    display: inline-block;
+    text-align: center;
+    border-radius: 3em;
+    background-color: #f46b45;
+    border-color: transparent;
+}
+button {
+    font-family: "Wendy One", sans-serif;
+    display: inline-block;
+    padding: 0.6em;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f46b45;
+border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 0.5em;
+}
+
+button:hover {background-color: lightcoral}
+
+button:active {
+    background-color: lightcoral;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button:disabled{
+    background: #eea849;
+}
+
+input[type="text"] {
+    font-family: "Wendy One", sans-serif;
+    margin-top: 1em;
+    padding: 0.3em;
+    font-size: 1.2em;
+    border-width: 0.05em;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.2em rgba(66,66,66,.63);
+
+}
+
+
+html {
+    font-family: "Wendy One", sans-serif;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("background.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+html::-webkit-scrollbar{
+    display: none; /*hide scrollbar*/
+}
+
+/* navigation bar
+ */
+
+
+
+
+.NavClass{
+    text-align:center;
+    margin-top:3em;
+}
+
+.NavClass ul{
+    display:inline-block;
+    margin:0;
+    padding:0;
+    list-style:none;
+    transform:skew(-25deg);
+}
+
+.NavClass ul li {
+    background: #f46b45;
+    float: left;
+    border-right: 1px solid #eee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: white;
+}
+
+.NavClass a{
+    display:block;
+    padding:1em 2em;
+    color:inherit;
+    text-decoration:none;
+    transform:skew(25deg);
+}
+
+
+
+@media screen and (max-width:790px) {
+    /* smartphones, iPhone, portrait, etc */
+    .NavClass{
+display: none;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height: 50px;
+        padding: 1em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+   .menu > li > a{
+       color: white;
+   }
+    .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+        background-color: white;
+    position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+
+    .menu-button::before {
+        content: '';
+        margin-top: -8px;
+    }
+
+    .menu-button::after {
+        content: '';
+        margin-top: 8px;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+
+
+    @media (max-width: 700px) {
+        .menu-button-container {
+            display: flex;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            margin-top: 50px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        #menu-toggle ~ .menu li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        #menu-toggle:checked ~ .menu li {
+            border: 1px solid #333;
+            height: 2.5em;
+            padding: 0.5em;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .menu > li {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0.5em 0;
+            width: 100%;
+            color: white;
+            background-color: #f46b45;
+        }
+        .menu > li:not(:last-child) {
+            border-bottom: 1px solid #444;
+        }
+    }
+
+
+}
